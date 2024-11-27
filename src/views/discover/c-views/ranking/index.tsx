@@ -1,5 +1,5 @@
 import type { FC, ReactNode } from 'react';
-import React, { memo } from 'react';
+import { memo } from 'react';
 
 interface Iprops {
     children?: ReactNode;

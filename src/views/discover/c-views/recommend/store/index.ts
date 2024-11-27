@@ -24,7 +24,7 @@ export const fetchRankingDataAction = createAsyncThunk('rankingData', async (_, 
         promises.push(getPlaylistDetail(id));
     }
     Promise.all(promises).then((res) => {
-        const playlists = res.map((item) => item.playlist);
+        const playlists = res.map((item) => item!.playlist);
         console.log('playlists', playlists);
         dispatch(changeRankingsAction(playlists));
     });

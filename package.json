@@ -1,13 +1,15 @@
 {
-  "name": "react_music_ts",
-  "private": true,
+  "name": "react_ts",
+  "homepage": "https://faiz-liu.github.io/react-ts/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.1",
